@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Editar Domicilio</title>
+    </head>
+    {% block page_content %}
+    <body>
+    <form method="POST">
+        <h1> Editar Domicilio</h1>
+        <table>
+            {{formaDomicilio | crispy}}
+        </table>
+        <button  class="btn btn-primary" type="submit">Enviar</button>
+        {% csrf_token %}
+    </form>
+    </body>
+    {% endblock %}
+    </html>

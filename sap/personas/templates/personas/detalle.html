@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle Persona</title>
+</head>
+{% block page_content %}
+<body>
+<div class="card">
+    <div class="card-body">
+        <h1>
+            Detalle Persona
+        </h1>
+        <div>Id Persona:<b>{{persona.id}}</b></div>
+        <div>Nombre:<b>{{persona.nombre}}</b></div>
+        <div>Apellido:<b>{{persona.apellido}}</b></div>
+        <div>Email:<b>{{persona.email}}</b></div>
+        <a href="{% url 'index' %}">Inicio</a>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

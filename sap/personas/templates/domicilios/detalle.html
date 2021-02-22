@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle Persona</title>
+</head>
+{% block page_content %}
+<body>
+<div class="card">
+    <div class="card-body">
+        <h1>
+            Detalle Domicilio
+        </h1>
+        <div>Id:<b>{{domicilio.id}}</b></div>
+        <div>Calle:<b>{{domicilio.calle}}</b></div>
+        <div>Numero de calle:<b>{{domicilio.no_calle}}</b></div>
+        <div>Pais:<b>{{domicilio.pais}}</b></div>
+        <a href="{% url 'index' %}">Inicio</a>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>
